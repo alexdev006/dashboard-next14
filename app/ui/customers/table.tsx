@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { poppins } from '@/app/ui/fonts';
+import { GeistSans } from 'geist/font';
+
 import Search from '@/app/ui/search';
 import { CustomersTable, FormattedCustomersTable } from '@/app/lib/definitions';
 
@@ -10,7 +11,7 @@ export default async function CustomersTable({
 }) {
   return (
     <div className="w-full">
-      <h1 className={`${poppins.className} mb-8 text-xl md:text-2xl`}>
+      <h1 className={`${GeistSans.className} mb-8 text-xl md:text-2xl`}>
         Customers
       </h1>
       <Search placeholder="Search customers..." />
